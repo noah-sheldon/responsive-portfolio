@@ -1,3 +1,9 @@
+:root {
+  --grey: #425064;
+  --white: #ffffff;
+  --teal: rgb(91, 187, 187);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,3 +27,104 @@ h6 {
 p {
   margin: 0;
 }
+
+.header {
+  width: 100%;
+  min-height: 30px;
+  max-height: 10%;
+  background-color: var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.logo {
+  width: 20%;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  background-color: var(--teal);
+  border: 2px solid white;
+  color: var(--grey);
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--teal);
+  border-bottom: 3px solid var(--teal);
+  font-weight: 400;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--teal);
+  border-radius: 25px;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.hero-banner h2 {
+  width: 10%;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: var(--grey);
+  background-color: var(--teal);
+}
+
+.page-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+#about {
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+#about h2{
+  text-align: right;
+  margin: 10px 10px 10px 20px;
+  
+}
+
+.resume-header {
+  color: var(--grey);
+  border-right: 5px solid var(--grey);
+  padding: 40px;
+}
+
+#about p{
+  margin-top: 30px;
+  color: var(--grey);
+}
+
