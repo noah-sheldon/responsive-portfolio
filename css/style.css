@@ -81,6 +81,7 @@ p {
   height: 40px;
   border: 2px solid var(--teal);
   border-radius: 25px;
+  position: relative;
 }
 
 .hero-banner {
@@ -120,7 +121,7 @@ p {
   border-right: 5px solid var(--grey);
   padding: 20px 26px;
   width: 10%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -134,7 +135,7 @@ p {
   color: var(--grey);
   width: 1fr;
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #grid {
@@ -203,6 +204,7 @@ p {
   color: var(--teal);
   text-decoration: none;
   font-size: 1.5rem;
+  margin-bottom: 50px;
 }
 
 .contact-item {
@@ -213,5 +215,54 @@ p {
 .contact-item a {
   text-decoration: none;
   color: var(--teal);
+
+}
+
+#footer {
+  height: 150px;
+  width: 100%;
+  background-color: var(--grey);
+  margin: 40px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  h2.page-section-header {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .logo{
+    display: none;
+  }
+
+  .header {
+    justify-content: flex-end;
+  }
+
+  div.contact-flex {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-item {
+    margin:10px;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  ul.header {
+    display: none;
+  }
 
 }
