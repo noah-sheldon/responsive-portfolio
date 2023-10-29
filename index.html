@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Noah Sheldon // Web Developer</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <!-- main logo / nav -->
-    <header class="header">
-      <h1 class="logo">Noah Sheldon</h1>
-      <nav class="navbar">
-        <ul>
-          <li class="nav-item">
-            <a href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact">Contact Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#resume">Resume</a>
-          </li>
-          <li class="nav-item">
-            <img
-              class="profile-image"
-              src="./images/profile_picture.jpg"
-              alt="Profile Image"
-            />
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Noah Sheldon // Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-    <!-- hero banner -->
-    <section class="hero-banner">
-      <div>
-        <h2 class="hero-subtitle">Web Maverick!</h2>
+<body>
+  <!-- main logo / nav -->
+  <header class="header">
+    <h1 class="logo">Noah Sheldon</h1>
+    <nav class="navbar">
+      <ul>
+        <li class="nav-item">
+          <a href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <img class="profile-image" src="./images/profile_picture.jpg" alt="Profile Image" />
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero banner -->
+  <section class="hero-banner">
+    <div>
+      <h2 class="hero-subtitle">Web Maverick!</h2>
+    </div>
+  </section>
+
+  <main class="page-wrapper">
+    <!-- about me -->
+    <section class="page-section">
+      <h2 id="about" class="page-section-header">About Me</h2>
+      <p id="about-me">
+        Hi there! I'm Noah, an aspiring web developer with a passion for creating dynamic and user-friendly websites.
+        I'm thrilled to be on the journey of turning lines of code into beautiful, functional web applications.
+        My fascination with web development began when I realized the power of technology to connect people, solve
+        problems, and make our lives easier. I believe the internet is a canvas for endless possibilities, and I'm
+        excited to be a part of this ever-evolving digital landscape.
+      </p>
+    </section>
+
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+      <h2 class="page-section-header">Work</h2>
+      <div id="grid">
+        <a href="https://github.com/noah-sheldon/ecommerce_store">
+          <div id="project-1" class="grid-item">
+            <div class="heading">E-Commerce Store</div>
+        </a>
+      </div>
+      <a href="https://github.com/noah-sheldon/marketing-firm-accessibile-landing-page">
+        <div id="project-2" class="grid-item">
+          <div class="heading">Marketing Firm Landing Page</div>
+      </a>
+      </div>
+      <a href="#">
+        <div id="project-3" class="grid-item">
+          <div class="heading">CarShop Website Clone</div>
+      </a>
+      </div>
+      <a href="#">
+        <div id="project-4" class="grid-item">
+          <div class="heading">Vacation Booking Website</div>
+      </a>
+      </div>
+      <a href="#">
+        <div id="project-5" class="grid-item">
+          <div class="heading">Habit App Clone</div>
+      </a>
+      </div>
+      </div>
       </div>
     </section>
 
-    <main class="page-wrapper">
-      <!-- about me -->
-      <section class="page-section">
-        <h2 id="about" class="page-section-header">About Me</h2>
-        <p id="about-me">
-          Hi there! I'm Noah, an aspiring web developer with a passion for creating dynamic and user-friendly websites. I'm thrilled to be on the journey of turning lines of code into beautiful, functional web applications.
-          My fascination with web development began when I realized the power of technology to connect people, solve problems, and make our lives easier. I believe the internet is a canvas for endless possibilities, and I'm excited to be a part of this ever-evolving digital landscape.
-        </p>
-      </section>
-
-      <!-- portfolio container -->
-      <section class="page-section" id="work">
-        <h2 class="page-section-header">Work</h2>
-        <div class="grid">
-          <div class="card card--portfolio">
-            <!-- <img src="./images/landing_page_screenshot.png" alt="Marketing Firm Landing Page"> -->
-          </div>
-        </div>
-      </section>
-
-      <!-- contact -->
-      <section class="page-section contact" id="contact">
-        <h2 class="page-section-header">Contact Me</h2>
-      </section>
-    </main>
-  </body>
+    <!-- contact -->
+    <section class="page-section contact" id="contact">
+      <h2 class="page-section-header">Contact Me</h2>
+    </section>
+  </main>
+</body>
 </html>
