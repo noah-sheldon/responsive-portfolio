@@ -107,25 +107,79 @@ p {
 }
 
 .page-section {
-  display: inline-flex;
+  display: flex;
   margin-top: 30px;
 
 }
 
-#page-section h2{
-  text-align: right;
-  margin: 10px 10px 10px 20px; 
-}
 
 .page-section-header {
   color: var(--grey);
   border-right: 5px solid var(--grey);
-  padding: 40px;
+  padding: 20px 20px;
+  display: inline-block;
 }
 
 #about-me {
   margin-top: 20px;
   color: var(--grey);
   margin-left: 20px;
+}
+
+#grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  grid-template-rows: 400px 200px 200px;
+  grid-template-areas: "project-1 project-1"
+  "project-2 project-3"
+  "project-4 project-5";
+}
+
+#project-1 {
+  grid-area: project-1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#project-2 {
+  grid-area: project-2;
+  background-image: url("../images/02-portfolio-2.jpg")
+}
+
+#project-3 {
+  grid-area: project-3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project-4 {
+  grid-area: project-4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#project-5 {
+  grid-area: project-5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.grid-item {
+  display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20px ;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.2);
+  padding: 15px;
+  color: var(--white);
+  font-size: 2rem;
+  border-bottom: 5px solid var(--teal);
+  height: 100%;
+}
+
+#grid a {
+  text-decoration: none;
 }
 
