@@ -109,21 +109,21 @@ p {
 .page-section {
   display: flex;
   margin-top: 30px;
-
 }
 
 
-.page-section-header {
+.page-section h2 {
   color: var(--grey);
   border-right: 5px solid var(--grey);
   padding: 20px 20px;
-  display: inline-block;
+  width: 5%
 }
 
 #about-me {
   margin-top: 20px;
   color: var(--grey);
   margin-left: 20px;
+  width: 1fr;
 }
 
 #grid {
