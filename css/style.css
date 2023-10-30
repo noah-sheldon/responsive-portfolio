@@ -233,6 +233,18 @@ p {
     display: none;
   }
 
+  #grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 2rem;
+    grid-template-rows: 400px 200px 200px 200px 200px;
+    grid-template-areas: "project-1"
+      "project-2" 
+      "project-3"
+      "project-4" 
+      "project-5";
+  }
 
 }
 
